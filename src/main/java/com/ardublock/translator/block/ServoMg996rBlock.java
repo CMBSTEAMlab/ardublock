@@ -20,10 +20,10 @@ public class ServoMg996rBlock extends TranslatorBlock {
 
 		String servoSpecs = ",620,2200";
 
-		if (!( tb instanceof NumberBlock ) )
-		{
-			throw new BlockException(this.blockId, "the Pin# of Servo must be a number");
-		}
+//		if (!( tb instanceof NumberBlock ) )
+//		{
+//			throw new BlockException(this.blockId, "the Pin# of Servo must be a number");
+//		}
 
 		String pinNumber = tb.toCode();
 		String servoName = "servo_pin_" + pinNumber;

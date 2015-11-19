@@ -1598,6 +1598,42 @@
 				</Image>
 			</Images>
 		</BlockGenus>
+		<BlockGenus name="servo_fs90r" kind="command" color="205 133 63" label-prefix="Servo: " initlabel="bg.servo">
+			<description>
+				<text>FS90R</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number-list" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="DuinoEDU_D5" label="D5" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.angle">
+					<DefaultArg genus-name="number" label="90" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/SG90.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
+		<BlockGenus name="servo_hd1900a" kind="command" color="205 133 63" label-prefix="Servo: " initlabel="bg.servo">
+			<description>
+				<text>HD-1900A</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number-list" connector-kind="socket" label="bc.pin_number">
+					<DefaultArg genus-name="DuinoEDU_D5" label="D5" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.angle">
+					<DefaultArg genus-name="number" label="90" />
+				</BlockConnector>
+			</BlockConnectors>
+			<Images>
+				<Image>
+					<FileLocation>com/ardublock/block/SG90.png</FileLocation>
+				</Image>
+			</Images>
+		</BlockGenus>
 		
 		<BlockGenus name="ultrasonic" kind="data" color="77 191 169" initlabel="bg.ultrasonic">
 			<description>
@@ -8853,6 +8889,8 @@
 		<BlockFamily>
 			<FamilyMember>servo_default</FamilyMember>
 			<FamilyMember>servo_sg90</FamilyMember>
+			<FamilyMember>servo_fs90r</FamilyMember>
+			<FamilyMember>servo_hd1900a</FamilyMember>
 			<FamilyMember>servo_mg996r</FamilyMember>
 		</BlockFamily>
 		<BlockFamily>

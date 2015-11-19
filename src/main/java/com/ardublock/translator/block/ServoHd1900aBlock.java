@@ -6,9 +6,9 @@ import com.ardublock.translator.block.exception.BlockException;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
 
-public class ServoSg90Block extends TranslatorBlock {
+public class ServoHd1900aBlock extends TranslatorBlock {
 
-	public ServoSg90Block(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label)
+	public ServoHd1900aBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label)
 	{
 		super(blockId, translator, codePrefix, codeSuffix, label);
 	}
@@ -18,7 +18,7 @@ public class ServoSg90Block extends TranslatorBlock {
 	{
 		TranslatorBlock tb = this.getRequiredTranslatorBlockAtSocket(0);
 
-		String servoSpecs = ",530,2600";
+		String servoSpecs = ",800,2200";
 
 //		if (!( tb instanceof NumberBlock ) )
 //		{
